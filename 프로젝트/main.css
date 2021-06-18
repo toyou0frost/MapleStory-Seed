@@ -63,6 +63,9 @@ ul{
 #topbar{
     background-color: #deffe9;
     border-bottom: 2px solid #ccc;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
 }
 
 #topbar_ul{
