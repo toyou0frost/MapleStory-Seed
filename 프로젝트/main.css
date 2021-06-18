@@ -1,3 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+    width: 1300px;
+    margin: 0 auto;
+    font-family: 'Jua', sans-serif;
+    background-color: #f0fff5;
+    border-left: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+}
+
+#body_div{
+    background-attachment: scroll;
+}
+
 ul{
     list-style-type: none;
 }
@@ -5,14 +29,116 @@ ul{
 .topbar_ul_list{
     max-height: 0px;
     overflow: hidden;
+    transition: max-height 0.5s;
 }
 
-#topbar_ul > li:nth-of-type(n):hover{
-    background-color: #DDDDDD;
+#memo{
+    width: 70px;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
-#topbar_ul > li:nth-of-type(n):hover ~ .topbar_ul_list{
-    background-color: black;
-    max-height: 100px;    
-    height: 100px;
+#topbar_ul li:nth-of-type(n):hover:not(#memo){
+    background-color: #d1ffe0;
+    transition: background-color 0.5s;
 }
+
+#topbar_ul li:nth-of-type(n):hover:not(#memo) .topbar_ul_list{
+    max-height: 100%;
+    transition: max-height 0.5s;
+}
+
+#navDiv{
+    display: flex;
+    width: 100%;
+    padding: 30px;
+    
+    margin: 20px;
+    margin:  0px;
+    margin-bottom: 0px;
+    padding-bottom: 5px;
+    transition: background-color 0.5s;
+}
+
+#topbar{
+    background-color: #deffe9;
+    border-bottom: 2px solid #ccc;
+}
+
+#topbar_ul{
+    width: 100%;
+    display: flex;
+}
+
+#topbar_ul > li{
+    flex: 1;
+}
+
+#logo{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -7px;
+    left: 210px;
+}
+
+#navtitle{
+    width: 400px;
+    height: 75px;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+}
+
+#topbar_ul > li > div:nth-of-type(2n-1){
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.topbar_ul_list > ul > li{
+    margin: 5px;
+    border: 1px solid black;
+}
+
+.topbar_ul_list > ul > li:hover{
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#memo > a{
+    color: black;
+    text-decoration: none;
+}
+
+#memo > a:hover{
+    font-weight: bold;
+}
+
+#logo_btn{
+    position: relative;
+}
+
+#logo_btn:hover{
+    cursor: pointer;
+}
+
+#topbar_hr{
+    border: 0;
+    height: 3px;
+    background: #ccc;
+    width: 10000px;
+    position: absolute;
+    right: 0px;
+}
+
+#section_1 > header > h1{
+    padding: 50px
+}
+
+#backImg_left_1, #backImg_right_1{
+    width: 300px;
+    height: 300px;
+    top: 300px;
+    z-index: 1;
+}
+

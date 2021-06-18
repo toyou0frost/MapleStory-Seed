@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS</title>
+    <style>
+        body {
+            height: 600px;
+        }
+
+        div {
+            width: 30%;
+            height: 300px;
+            overflow: auto;
+            float: left;
+            margin: 0px 10px;
+            background-image: url("프로젝트/img/알리샤\ 쌍둥이-min.png");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            border: 1px solid #bcbcbc;
+            font-size: 36px;
+        }
+
+        .jb-scroll {
+            background-attachment: scroll;
+        }
+
+        .jb-fixed {
+            background-attachment: fixed;
+        }
+
+        .jb-local {
+            background-attachment: local;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="jb-scroll">
+        <p>scroll</p>
+        <ul>
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+            <li>Four</li>
+            <li>Five</li>
+            <li>Six</li>
+            <li>Seven</li>
+            <li>Eight</li>
+            <li>Nine</li>
+            <li>Ten</li>
+        </ul>
+    </div>
+    <div class="jb-fixed">
+        <p>fixed</p>
+        <ul>
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+            <li>Four</li>
+            <li>Five</li>
+            <li>Six</li>
+            <li>Seven</li>
+            <li>Eight</li>
+            <li>Nine</li>
+            <li>Ten</li>
+        </ul>
+    </div>
+    <div class="jb-local">
+        <p>local</p>
+        <ul>
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+            <li>Four</li>
+            <li>Five</li>
+            <li>Six</li>
+            <li>Seven</li>
+            <li>Eight</li>
+            <li>Nine</li>
+            <li>Ten</li>
+        </ul>
+    </div>
+</body>
+
+</html>
