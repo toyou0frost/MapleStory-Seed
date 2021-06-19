@@ -5,94 +5,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sunrin</title>
-
+    <title>Document</title>
     <style>
-        *,
-        *::after,
-        *::before {
-            margin: 0;
-            padding: 0;
 
-            box-sizing: border-box;
-        }
 
-        body>*:not(footer) {
-            width: 950px;
-            margin: 0 auto;
-        }
 
-        nav {
-            display: flex;
-            width: 100%;
-        }
 
-        nav>ul {
-            width: 100%;
-            display: flex;
-            list-style: none;
-        }
 
-        nav>ul>li {
-            flex: 1;
-        }
 
-        nav>ul>li>a {
+
+        /* default button style */
+        .btn {
+            position: relative;
+            border: 0;
+            padding: 15px 25px;
             display: inline-block;
-            width: 100%;
-            color: #555;
-            text-decoration: none;
-            font-size: 16px;
-            line-height: 68px;
-            letter-spacing: -1px;
-            font-weight: 600;
             text-align: center;
+            color: white;
         }
-
-        nav>ul>li>a+ul {
-            display: none;
-            box-sizing: content-box;
-            background-color: white;
-            border: 1px solid #dfa21f;
-            list-style: none;
-            width: 129px;
-            z-index: 100;
+        .btn-gradient {
+            text-decoration: none;
+            color: white;
+            padding: 10px 30px;
+            display: inline-block;
+            position: relative;
+            border: 1px solid rgba(0, 0, 0, 0.21);
+            border-bottom: 4px solid rgba(0, 0, 0, 0.21);
+            border-radius: 4px;
+            text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
         }
-
-        nav>ul>li>a+ul>li {
-            font-size: 12px;
-            font-family: 'Dotum', '돋움', 'NanumGothic', '나눔고딕', sans-serif;
-            line-height: 2em;
-            font-weight: normal;
-            color: #666;
-            cursor: pointer;
-            padding: 7px 18px;
+        .btn-gradient.blue {
+            background: rgba(102, 152, 203, 1);
+            background: -moz-linear-gradient(top, rgba(102, 152, 203, 1) 0%, rgba(92, 138, 184, 1) 100%);
+            background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(102, 152, 203, 1)), color-stop(100%, rgba(92, 138, 184, 1)));
+            background: -webkit-linear-gradient(top, rgba(102, 152, 203, 1) 0%, rgba(92, 138, 184, 1) 100%);
+            background: -o-linear-gradient(top, rgba(102, 152, 203, 1) 0%, rgba(92, 138, 184, 1) 100%);
+            background: -ms-linear-gradient(top, rgba(102, 152, 203, 1) 0%, rgba(92, 138, 184, 1) 100%);
+            background: linear-gradient(to bottom, rgba(102, 152, 203, 1) 0%, rgba(92, 138, 184, 1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6698cb', endColorstr='#5c8ab8', GradientType=0);
         }
-
-        nav>ul>li>a+ul>li.divided {
-            padding-top: 18px;
-            padding-bottom: 18px;
-            border-bottom: 1px solid #dfa21f;
-        }
-
-        nav>ul>li>a+ul>li:hover {
-            font-weight: bold;
-            color: #dfa21f;
-        }
-
-        nav>ul>li:hover>a+ul {
-            display: inherit;
-            position: absolute;
-        }
-
-        main {
-            display: grid;
-            /* grid-template-rows: 315px 315px 320px; */
-            /* grid-template-columns: 305px 305px 400px; */
-            grid-template-areas:
-                "banner banner notice1"
-                "banner banner notice2"
-                "calendar menu ad";
+        .btn-gradient.blue:active {
+            background: #608FBF;
         }
 
 
@@ -100,77 +53,262 @@
 </head>
 
 <body>
+    <div class="header">
+        <h1>Gradient Buttons</h1>
+    </div>
+    <div class="content">
 
-    <nav>
-        <ul>
-            <li>
-                <a href="">학교소개</a>
-                <ul>
-                    <li>비전</li>
-                    <li>교육목표</li>
-                    <li>학교연혁</li>
-                </ul>
-            </li>
-            <li>
-                <a href="">학교마당</a>
-                <ul>
-                    <li class="divided">VISION</li>
-                    <li>교육목표</li>
-                    <li>학교연혁</li>
-                </ul>
-            </li>
-            <li>
-                <a href="">학생/학부모마당</a>
-                <ul>
-                    <li>VISION</li>
-                    <li>교육목표</li>
-                    <li>학교연혁</li>
-                </ul>
-            </li>
-            <li>
-                <a href="">취업/진학</a>
-                <ul>
-                    <li>VISION</li>
-                    <li>교육목표</li>
-                    <li>학교연혁</li>
-                </ul>
-            </li>
-            <li>
-                <a href="">입학</a>
-                <ul>
-                    <li>VISION</li>
-                    <li>교육목표</li>
-                    <li>학교연혁</li>
-                </ul>
-            </li>
-            <li>
-                <a href="">학교평가</a>
-                <ul>
-                    <li>VISION</li>
-                    <li>교육목표</li>
-                    <li>학교연혁</li>
-                </ul>
-            </li>
-            <li>
-                <a href="">SW영재원</a>
-                <ul>
-                    <li>VISION</li>
-                    <li>교육목표</li>
-                    <li>학교연혁</li>
-                </ul>
-            </li>
-            <li>
-                <a href="">사이트바로가기</a>
-            </li>
-            <li>
-                <a href="">온라인 수업</a>
-            </li>
-            <li>
-                <a href="">학력평가</a>
-            </li>
+        <h2>Colors</h2>
+        <ul class="color">
+            <li class="green"></li>
+            <li class="blue"></li>
+            <li class="red"></li>
+            <li class="purple"></li>
+            <li class="cyan"></li>
+            <li class="yellow"></li>
         </ul>
-    </nav>
+        <div class="container">
+            <h2>mini</h2>
+            <a href="#" class="btn-gradient cyan mini">Button</a>
+            <a href="#" class="btn-gradient orange mini">Button</a>
+            <a href="#" class="btn-gradient blue mini">Button</a>
+            <a href="#" class="btn-gradient purple mini">Button</a>
+            <a href="#" class="btn-gradient green mini">Button</a>
+            <a href="#" class="btn-gradient yellow mini">Button</a>
+            <a href="#" class="btn-gradient red mini">Button</a>
 
+            <pre>&lt;<span class="anc">a</span> <span class="att">href</span>=<span class="val">"#"</span> <span class="att">class</span>=<span class="val">"btn-gradient red mini"</span>>Button&lt;/<span class="anc">a</span>></pre>
+        </div>
+        <div class="container">
+            <h2>small</h2>
+            <a href="#" class="btn-gradient cyan small">Button</a>
+            <a href="#" class="btn-gradient orange small">Button</a>
+            <a href="#" class="btn-gradient blue small">Button</a>
+            <a href="#" class="btn-gradient purple small">Button</a>
+            <a href="#" class="btn-gradient green small">Button</a>
+            <a href="#" class="btn-gradient yellow small">Button</a>
+            <a href="#" class="btn-gradient red small">Button</a>
+
+            <pre>&lt;<span class="anc">a</span> <span class="att">href</span>=<span class="val">"#"</span> <span class="att">class</span>=<span class="val">"btn-gradient red small"</span>>Button&lt;/<span class="anc">a</span>></pre>
+        </div>
+        <div class="container">
+            <h2>normal</h2>
+            <a href="#" class="btn-gradient cyan">Button</a>
+            <a href="#" class="btn-gradient orange">Button</a>
+            <a href="#" class="btn-gradient blue">Button</a>
+            <a href="#" class="btn-gradient purple">Button</a>
+            <a href="#" class="btn-gradient green">Button</a>
+            <a href="#" class="btn-gradient yellow">Button</a>
+            <a href="#" class="btn-gradient red">Button</a>
+
+            <pre>&lt;<span class="anc">a</span> <span class="att">href</span>=<span class="val">"#"</span> <span class="att">class</span>=<span class="val">"btn-gradient red"</span>>Button&lt;/<span class="anc">a</span>></pre>
+        </div>
+        <div class="container">
+            <h2>large</h2>
+            <a href="#" class="btn-gradient cyan large">Button</a>
+            <a href="#" class="btn-gradient orange large">Button</a>
+            <a href="#" class="btn-gradient blue large">Button</a>
+            <a href="#" class="btn-gradient purple large">Button</a>
+            <a href="#" class="btn-gradient green large">Button</a>
+            <a href="#" class="btn-gradient yellow large">Button</a>
+            <a href="#" class="btn-gradient red large">Button</a>
+
+            <pre>&lt;<span class="anc">a</span> <span class="att">href</span>=<span class="val">"#"</span> <span class="att">class</span>=<span class="val">"btn-gradient red large"</span>>Button&lt;/<span class="anc">a</span>></pre>
+        </div>
+        <div class="container">
+            <h2>block</h2>
+            <a href="#" class="btn-gradient cyan block">Block Button</a>
+            <a href="#" class="btn-gradient orange block">Block Button</a>
+            <a href="#" class="btn-gradient blue block">Block Button</a>
+            <a href="#" class="btn-gradient purple block">Block Button</a>
+            <a href="#" class="btn-gradient green block">Block Button</a>
+            <a href="#" class="btn-gradient yellow block">Block Button</a>
+            <a href="#" class="btn-gradient red block">Block Button</a>
+
+            <pre>&lt;<span class="anc">a</span> <span class="att">href</span>=<span class="val">"#"</span> <span class="att">class</span>=<span class="val">"btn-gradient red block"</span>>Button&lt;/<span class="anc">a</span>></pre>
+        </div>
+    </div>
+
+
+    <div class="header">
+        <h1>.btn-two</h1>
+    </div>
+    <div class="content">
+        <section>
+            <div class="container">
+                <h2>mini</h2>
+                <a href="#" class="btn-two green mini">Button</a>
+                <a href="#" class="btn-two blue mini">Button</a>
+                <a href="#" class="btn-two red mini">Button</a>
+                <a href="#" class="btn-two purple mini">Button</a>
+                <a href="#" class="btn-two cyan mini">Button</a>
+                <a href="#" class="btn-two yellow mini">Button</a>
+
+                <pre>&lt;<span class="anc">a</span> <span class="att">href</span>=<span class="val">"#"</span> <span class="att">class</span>=<span class="val">"btn-two green mini"</span>>Button&lt;/<span class="anc">a</span>></pre>
+            </div>
+            <div class="container">
+                <h2>small</h2>
+                <a href="#" class="btn-two green small">Button</a>
+                <a href="#" class="btn-two blue small">Button</a>
+                <a href="#" class="btn-two red small">Button</a>
+                <a href="#" class="btn-two purple small">Button</a>
+                <a href="#" class="btn-two cyan small">Button</a>
+                <a href="#" class="btn-two yellow small">Button</a>
+                <pre>&lt;<span class="anc">a</span> <span class="att">href</span>=<span class="val">"#"</span> <span class="att">class</span>=<span class="val">"btn-two green small"</span>>Button&lt;/<span class="anc">a</span>></pre>
+            </div>
+            <div class="container">
+                <h2>normal</h2>
+                <a href="#" class="btn-two green">Button</a>
+                <a href="#" class="btn-two blue">Button</a>
+                <a href="#" class="btn-two red">Button</a>
+                <a href="#" class="btn-two purple">Button</a>
+                <a href="#" class="btn-two cyan">Button</a>
+                <a href="#" class="btn-two yellow">Button</a>
+                <pre>&lt;<span class="anc">a</span> <span class="att">href</span>=<span class="val">"#"</span> <span class="att">class</span>=<span class="val">"btn-two green"</span>>Button&lt;/<span class="anc">a</span>></pre>
+            </div>
+            <div class="container">
+                <h2>large</h2>
+                <a href="#" class="btn-two green large">Button</a>
+                <a href="#" class="btn-two blue large">Button</a>
+                <a href="#" class="btn-two red large">Button</a>
+                <a href="#" class="btn-two purple large">Button</a>
+                <a href="#" class="btn-two cyan large">Button</a>
+                <a href="#" class="btn-two yellow large">Button</a>
+                <pre>&lt;<span class="anc">a</span> <span class="att">href</span>=<span class="val">"#"</span> <span class="att">class</span>=<span class="val">"btn-two green large"</span>>Button&lt;/<span class="anc">a</span>></pre>
+            </div>
+
+            <div class="container">
+                <h2>rounded</h2>
+                <a href="#" class="btn-two green rounded">Button</a>
+                <a href="#" class="btn-two blue rounded">Button</a>
+                <a href="#" class="btn-two red rounded">Button</a>
+                <a href="#" class="btn-two purple rounded">Button</a>
+                <a href="#" class="btn-two cyan rounded">Button</a>
+                <a href="#" class="btn-two yellow rounded">Button</a>
+                <pre>&lt;<span class="anc">a</span> <span class="att">href</span>=<span class="val">"#"</span> <span class="att">class</span>=<span class="val">"btn-two green rounded"</span>>Button&lt;/<span class="anc">a</span>></pre>
+            </div>
+            <div class="container">
+                <h2>block</h2>
+                <a href="#" class="btn-two green block">Button</a>
+                <a href="#" class="btn-two blue block">Button</a>
+                <a href="#" class="btn-two red block">Button</a>
+                <a href="#" class="btn-two purple block">Button</a>
+                <a href="#" class="btn-two cyan block">Button</a>
+                <a href="#" class="btn-two yellow block">Button</a>
+                <pre>&lt;<span class="anc">a</span> <span class="att">href</span>=<span class="val">"#"</span> <span class="att">class</span>=<span class="val">"btn-two green block"</span>>Button&lt;/<span class="anc">a</span>></pre>
+            </div>
+        </section>
+    </div>
+
+    <div class="header">
+        <h1>Default Buttons</h1>
+    </div>
+    <div class="content">
+        <section>
+
+            <div class="container">
+                <h2>mini</h2>
+                <a href="#" class="btn green mini">Button</a>
+                <a href="#" class="btn blue mini">Button</a>
+                <a href="#" class="btn red mini">Button</a>
+                <a href="#" class="btn purple mini">Button</a>
+                <a href="#" class="btn cyan mini">Button</a>
+                <a href="#" class="btn yellow mini">Button</a>
+                <pre>&lt;<span class="anc">a</span> <span class="att">href</span>=<span class="val">"#"</span> <span class="att">class</span>=<span class="val">"btn green mini"</span>>Button&lt;/<span class="anc">a</span>></pre>
+            </div>
+
+            <div class="container">
+                <h2>small</h2>
+                <a href="#" class="btn green small">Button</a>
+                <a href="#" class="btn blue small">Button</a>
+                <a href="#" class="btn red small">Button</a>
+                <a href="#" class="btn purple small">Button</a>
+                <a href="#" class="btn cyan small">Button</a>
+                <a href="#" class="btn yellow small">Button</a>
+                <pre>&lt;<span class="anc">a</span> <span class="att">href</span>=<span class="val">"#"</span> <span class="att">class</span>=<span class="val">"btn green small"</span>>Button&lt;/<span class="anc">a</span>></pre>
+            </div>
+
+            <div class="container">
+                <h2>normal</h2>
+                <a href="#" class="btn green">Button</a>
+                <a href="#" class="btn blue">Button</a>
+                <a href="#" class="btn red">Button</a>
+                <a href="#" class="btn purple">Button</a>
+                <a href="#" class="btn cyan">Button</a>
+                <a href="#" class="btn yellow">Button</a>
+                <pre>&lt;<span class="anc">a</span> <span class="att">href</span>=<span class="val">"#"</span> <span class="att">class</span>=<span class="val">"btn green"</span>>Button&lt;/<span class="anc">a</span>></pre>
+            </div>
+
+            <div class="container">
+                <h2>large</h2>
+                <a href="#" class="btn green large">Button</a>
+                <a href="#" class="btn blue large">Button</a>
+                <a href="#" class="btn red large">Button</a>
+                <a href="#" class="btn purple large">Button</a>
+                <a href="#" class="btn cyan large">Button</a>
+                <a href="#" class="btn yellow large">Button</a>
+                <pre>&lt;<span class="anc">a</span> <span class="att">href</span>=<span class="val">"#"</span> <span class="att">class</span>=<span class="val">"btn green large"</span>>Button&lt;/<span class="anc">a</span>></pre>
+            </div>
+
+            <div class="container">
+                <h2>rounded</h2>
+                <a href="#" class="btn green rounded">Button</a>
+                <a href="#" class="btn blue rounded">Button</a>
+                <a href="#" class="btn red rounded">Button</a>
+                <a href="#" class="btn purple rounded">Button</a>
+                <a href="#" class="btn cyan rounded">Button</a>
+                <a href="#" class="btn yellow rounded">Button</a>
+                <pre>&lt;<span class="anc">a</span> <span class="att">href</span>=<span class="val">"#"</span> <span class="att">class</span>=<span class="val">"btn green rounded"</span>>Button&lt;/<span class="anc">a</span>></pre>
+            </div>
+
+            <div class="container">
+                <h2>block</h2>
+                <a href="#" class="btn green block">Button</a>
+                <a href="#" class="btn blue block">Button</a>
+                <a href="#" class="btn red block">Button</a>
+                <a href="#" class="btn purple block">Button</a>
+                <a href="#" class="btn cyan block">Button</a>
+                <a href="#" class="btn yellow block">Button</a>
+                <pre>&lt;<span class="anc">a</span> <span class="att">href</span>=<span class="val">"#"</span> <span class="att">class</span>=<span class="val">"btn-3d green"</span>>Button&lt;/<span class="anc">a</span>></pre>
+            </div>
+
+        </section>
+    </div>
+
+
+    <div class="header">
+        <h1>3D Buttons</h1>
+    </div>
+    <div class="content-3d">
+
+        <div class="btn-container">
+            <a href="#" class="btn-3d green">Button</a>
+            <pre>&lt;<span class="anc">a</span> <span class="att">href</span>=<span class="val">"#"</span> <span class="att">class</span>=<span class="val">"btn-3d green"</span>>Button&lt;/<span class="anc">a</span>></pre>
+        </div>
+
+        <div class="btn-container">
+            <a href="#" class="btn-3d blue">Button</a>
+            <pre>&lt;<span class="anc">a</span> <span class="att">href</span>=<span class="val">"#"</span> <span class="att">class</span>=<span class="val">"btn-3d blue"</span>>Button&lt;/<span class="anc">a</span>></pre>
+        </div>
+
+        <div class="btn-container">
+            <a href="#" class="btn-3d red">Button</a>
+            <pre>&lt;<span class="anc">a</span> <span class="att">href</span>=<span class="val">"#"</span> <span class="att">class</span>=<span class="val">"btn-3d red"</span>>Button&lt;/<span class="anc">a</span>></pre>
+        </div>
+
+        <div class="btn-container">
+            <a href="#" class="btn-3d purple">Button</a>
+            <pre>&lt;<span class="anc">a</span> <span class="att">href</span>=<span class="val">"#"</span> <span class="att">class</span>=<span class="val">"btn-3d purple"</span>>Button&lt;/<span class="anc">a</span>></pre>
+        </div>
+        <div class="btn-container">
+            <a href="#" class="btn-3d cyan">Button</a>
+            <pre>&lt;<span class="anc">a</span> <span class="att">href</span>=<span class="val">"#"</span> <span class="att">class</span>=<span class="val">"btn-3d cyan"</span>>Button&lt;/<span class="anc">a</span>></pre>
+        </div>
+        <div class="btn-container">
+            <a href="#" class="btn-3d yellow">Button</a>
+            <pre>&lt;<span class="anc">a</span> <span class="att">href</span>=<span class="val">"#"</span> <span class="att">class</span>=<span class="val">"btn-3d yellow"</span>>Button&lt;/<span class="anc">a</span>></pre>
+        </div>
+    </div>
 </body>
 
 </html>

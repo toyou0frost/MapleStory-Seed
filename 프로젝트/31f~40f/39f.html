@@ -9,6 +9,31 @@
     <link rel="stylesheet" href="../main.css">
     <title>MapleStory SEED</title>
     <script src="../main.js"></script>
+    <script src="../39f.js"></script>
+    <style>
+        #data{
+            height: 43px;
+            margin-right: 10px;
+        }
+        #inputbtn {            
+            border: 0;
+            text-align: center;
+            color: white;
+            padding: 10px 30px;
+            border: 1px solid rgba(0, 0, 0, 0.21);
+            border-bottom: 4px solid rgba(0, 0, 0, 0.21);
+            border-radius: 4px;
+            background: rgba(102, 152, 203, 1);
+        }
+        #inputbtn:active {
+            background: #608FBF;
+        }
+
+        #search{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
 </head>
 
 <body>
@@ -117,6 +142,32 @@
     </nav>
     <section id="section_1">
         <article id="article_1">
+            <h1>★39층- 퀴즈광이 내는 퀴즈 모두 맞추기</h1>
+            <p>
+                <strong>기타 층.</strong> <br>
+                NPC가 내는 문제를 10번 맞춰야한다. <br>
+                2회 이상 틀릴 경우 처음부터 문제를 맞춰야한다. 기회는 무제한. <br> <br>
+            </p>
+            <div id="search">
+                <input type="text" id="data" autofocus>
+                <input type="button" value="검색" onclick="answer()" id="inputbtn"> 
+            </div>
+            <br> <br>
+            <p id="outputData">
+
+            </p>
+        </article>
+        <article>
+            <h1>검색창 사용법</h1>
+            <img src="gif/39f.jpg" alt="39f" style="width: 700px;">
+            <p>
+                이런 문제가 나왔다면 <br>
+                2개의 보기를 띄어쓰기 없이 연속해서 입력! <br> <br>
+                <img src="gif/39f_1.PNG" alt="39f" style="border: 1px solid black;"> <br> <br>
+                정상적으로 입력했다면 <br> 
+                이런 식으로 해당 문제와 그에 대한 답이 문제 오른쪽에 출력! <br>
+                *주의사항 : 검색창에 2글자 이하로 검색하거나 띄어쓰기를 할 시 정삭적으로 검색되지 않음
+            </p>
         </article>
     </section>
     <br><br><br><br><br><br><br><br><br><br>
