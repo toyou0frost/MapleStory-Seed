@@ -169,3 +169,26 @@ ul{
     background-color: #DDDDDD;
     padding: 10px;
 }
+
+#data{
+    height: 43px;
+    margin-right: 10px;
+}
+#inputbtn {            
+    border: 0;
+    text-align: center;
+    color: white;
+    padding: 10px 30px;
+    border: 1px solid rgba(0, 0, 0, 0.21);
+    border-bottom: 4px solid rgba(0, 0, 0, 0.21);
+    border-radius: 4px;
+    background: rgba(102, 152, 203, 1);
+}
+#inputbtn:active {
+    background: #608FBF;
+}
+
+#search{
+    display: flex;
+    justify-content: center;
+}
