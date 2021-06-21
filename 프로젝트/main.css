@@ -193,6 +193,10 @@ ul{
     justify-content: center;
 }
 
+#logo_m{
+    display: none;
+}
+
 @media(max-width: 480px){
     body{
         font-size: 1.2em;
@@ -206,4 +210,35 @@ ul{
         padding-right: 10px;
         padding-left: 10px;
     }
+    #navdiv{
+        display: flex;
+    }
+    #logo_btn{
+        display: none;
+        position: relative;
+    }
+    
+    #logo_m{
+        padding-top: 10px;
+        margin-right: 10px;
+        display: flex;
+        position: relative;
+    }
+
+    #logo_m>h1{
+        display: flex;
+        align-items: center;
+        font-size: 1.2em;
+    }
+
+    #logo_m>img{
+        position: relative;
+        top: 15px;
+        left: 169px;
+    }
+    
+    /*
+    모바일 상태에서 로고 위치 조정, 탑바내의 리스트를 클릭했을 때 다시 기본값으로 돌아가게
+    */
+    
 }
