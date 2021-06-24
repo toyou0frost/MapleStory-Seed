@@ -299,7 +299,7 @@ const floor = [
     '<article id="article_1"><h1>★24층 - 배경음악을 듣고 마을 이름 맞추기. </h1><p>*배경음악 동영상이 필요하다. <br><a href="https://www.youtube.com/watch?v=tvBfW1m6DiM" target="blank">배경음악</a> <br>참고하자. <br> <br><strong>기타 층.</strong> <br>배경음악 BGM을 듣고 정답을 맞추면 된다. <br>틀릴 경우 5분씩 차감되니 꼭 한번에 맞추도록 하자. <br> <br><img src="gif/24f.gif" alt="24f"> <br> <br><strong>족보 :</strong> 뾰족귀 여우마을, 백초마을, 헤네시스, 페리온, 커닝시티, 엘리니아, <br>헬리시움 탈환 본부, 크리스탈 가든, 무릉, 리스항구, 리프레, 에레브, 아랫마을, <br>아쿠아리움, 루디브리엄, 리엔, 에우렐, 판테온, 에델슈타인, 아리안트, 마가티아, <br>오르비스, 엘나스, 지구방위본부, 노틸러스, 슬리피우드 <br><strong>헷갈리는 목록 :</strong> <br>무릉 O 무릉도원 X <br>루디브리엄 O 루디브리움 X <br><strong>띄어쓰기</strong>는 안해도 된다. 단,<strong> 아래의 세 가지 맵만 띄어쓰기 존재. </strong><br>뾰족귀 여우마을 O 뾰족귀 여우 마을 X 뾰족귀여우마을 X <br>헬리시움 탈환 본부 O 헬리시움 탈환본부 X 헬리시움탈환본부 X <br>크리스탈 가든 O 크리스탈가든 X <br></p></article>',
     '<article id="article_1"><h1>25층 - 쉼터</h1><p><strong>★27층, ★33층</strong> 공략을 봐두자. <br>35층까지 딱히 어려운 층이 없다. <br> <br><img src="gif/25f.png"alt="25f"></p></article>',
     '<article id="article_1"><h1>26층 - 오렌지 슬라임을 퇴치하여 얻은 오렌지 슬라임의 액체 10개를 제물에 떨궈 더 많은 오렌지 슬라임을 소환해 오렌지 슬라임 300마리 퇴치하기.</h1><p><strong>사냥 층. </strong><br>슬라임을 잡아 액체를 얻어 중앙 제단에 10개씩 떨구면, 슬라임이 20마리씩 나온다. <br>너무 많으면 소환이 안되므로 두번씩 소환을 반복해서 클리어하자. <br>클리어 이후 다음 사람을 생각해서 <strong>두번 소환해두고 가자.</strong> <br> <br><img src="gif/26f.gif" alt="26f"></p></article>',
-    '<article id="article_1"><h1>★27층 - 장애물과 함정을 피해 다음 층의 입구까지 돌파하기.</h1><p><strong>점프 층.</strong> <br>동영상을 한번 본 후 설명을 보는게 이해하기 더 쉽다. 동영상 시청 바람. <br><a href="https://www.youtube.com/watch?v=zFeqYiaEi_Q&feature=emb_logo" target="blank">27층 무편집 동영상</a><br> <br><p style="color: red; display: inline;">함정 구역</p>은 운빨로 찍는구간이다. 3구역 존재한다. <br>4개의 초록상자 중 정답인 곳을 찾을때 까지 다시 가면 된다. <br>함정에 걸릴 경우 맵에 표창이 생성된다. 아프기도 하고 펫자동물약이 금지인 맵이니 직접 물약을 먹어주자. <br> <br><p style="color: orange; display: inline;">포탈 이동</p>은 움짤을 확인하자. <br> <br><img src="gif/27_0f.jpg" alt="27f" width="700px"> <br> <br><p style="color: orange; display: inline;">1번포탈</p> <strong>함정구역 통과 후 아래처럼 이동하여 포탈을 타자.</strong> <br> <br><img src="gif/27_1f.gif" alt="27f"> <br> <br><p style="color: orange; display: inline;">2번포탈</p> <br> <br><img src="gif/27_2f.gif" alt="27f"> <br> <br><strong>2번포탈 이후 8연속 점프는 점프꾹으로 되는 캐릭도 있고, 안되는 캐릭도 있다. <br>점프꾹이 가능하면 점프꾹하자. <br> <br></strong><p style="display: inline; color: orange;">3번포탈</p> <br> <br><img src="" alt="27f"></p></article>',
+    '<article id="article_1"><h1>★27층 - 장애물과 함정을 피해 다음 층의 입구까지 돌파하기.</h1><p><strong>점프 층.</strong> <br>동영상을 한번 본 후 설명을 보는게 이해하기 더 쉽다. 동영상 시청 바람. <br><a href="https://www.youtube.com/watch?v=zFeqYiaEi_Q&feature=emb_logo" target="blank">27층 무편집 동영상</a><br> <br><p style="color: red; display: inline;">함정 구역</p>은 운빨로 찍는구간이다. 3구역 존재한다. <br>4개의 초록상자 중 정답인 곳을 찾을때 까지 다시 가면 된다. <br>함정에 걸릴 경우 맵에 표창이 생성된다. 아프기도 하고 펫자동물약이 금지인 맵이니 직접 물약을 먹어주자. <br> <br><p style="color: orange; display: inline;">포탈 이동</p>은 움짤을 확인하자. <br> <br><img src="gif/27_0f.jpg" alt="27f" width="700px"> <br> <br><p style="color: orange; display: inline;">1번포탈</p> <strong>함정구역 통과 후 아래처럼 이동하여 포탈을 타자.</strong> <br> <br><img src="gif/27_1f.gif" alt="27f"> <br> <br><p style="color: orange; display: inline;">2번포탈</p> <br> <br><img src="gif/27_2f.gif" alt="27f"> <br> <br><strong>2번포탈 이후 8연속 점프는 점프꾹으로 되는 캐릭도 있고, 안되는 캐릭도 있다. <br>점프꾹이 가능하면 점프꾹하자. <br> <br></strong><p style="display: inline; color: orange;">3번포탈</p> <br> <br><img src="gif/27_3f.gif" alt="27f"></p></article>',
     '<article id="article_1"><h1>28층 - 도마뱀 굴을 일반 공격으로 공격해 벨라모아와 프릴드를 불러내고 각각 20마리 퇴치하기.</h1><p><strong>사냥 층.</strong> <br>중앙 상단에있는 <strong>도마뱀 굴을 일반공격하면 몹이 나온다.</strong> 나온 몹을 처치하면 된다. <br>몹은 랜덤으로 소환되니 나올때까지 반복하자. <br>발판마다 도마뱀 굴과 이어진 포탈이 있으니 활용하면 좋다. <br>만약 20마리 이상 잡은 몬스터가 또 나왓다면, 굳이 가서 잡지 말고 굴에 가만히 있자. 굴의 다음 공격타이밍 때 몹은 사라진다. <br> <br><img src="gif/28f.gif" alt="28f"></p></article>',
     '<article id="article_1"><h1>29층 - 모래 난쟁이들에게 모래 가루 10개를 빼앗아 모래 왼쪽 나무에 떨어트려 모래 결정을 얻은 뒤 <br> 올바른 수만큼의 모래 결정을 오른쪽 나무에 떨궈 모래 바람에 가린 노을을되찾기 </h1><strong>사냥(템 모으기) 층.</strong> <br>몹잡아서 나온 <strong>잡템을 모으면 좌측 상단에 모래결정이 생성된다.</strong> (잡템 10개당 모래결정 1개) <br><strong>모래결정을 주워서 그림처럼 나무 밑 (빨간박스)에 떨구자. </strong><br> <br><img src="gif/29f.png" alt="29f"> <br> <br><img src="gif/29_1f.gif" alt="29f"> <br> <br><strong>알맞은 개수는 1~7. 답을 초과해도 괜찮다.</strong> <br>예) 답이 3개면 모래결정 5개를 떨궈도 통과된다. <br>예) 답이 3개면 3개를 한번에 떨궈야 한다. 1개/2개, 1개/1개/1개로 떨구면 인식을 하지 못한다. <br></article>',
     '<article id="article_1"><h1>30층 - 보스: 겁에 질린 사자 퇴치하기</h1><p><strong>보스 층.</strong> <br> 체력 63억. <br>놔두면 계속 숨어버리니 빠르게 처치하자. <br>딜이 충분하다면 움짤처럼 떨어지면서 상자에 말걸기 -> 소환 -> 원킬컷이 가능하다. <br> <br><img src="gif/30f.gif" alt="30f"></p></article>',
@@ -372,7 +372,6 @@ function answer(){
                 continue;
             }
             else if(str.slice(j, inputstr.length + j) === inputstr){
-                answer = str[str.length - 1];
                 output[count] = strtmp;
                 count++;
             }
@@ -380,7 +379,16 @@ function answer(){
     }
     if(count >= 1){
         for(let i = 0; i < output.length; i++){
-            document.getElementById("outputData").innerHTML += output[i]+"<br>";
+            for(let j = 0; j < output[i].length; j++){
+                if(j == output[i].length - 1){
+                    answer += "<strong style='font-size: 1.3em; color : red;'>"+output[i][j]+"</strong>";
+                }
+                else{
+                    answer += output[i][j];
+                }
+            }
+            document.getElementById("outputData").innerHTML += answer+"<br>";
+            answer = ""
             document.getElementById("data").autofocus = true;
         }
     }
