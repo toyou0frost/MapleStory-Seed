@@ -19,6 +19,10 @@ body{
     border-right: 2px solid #ccc;
 }
 
+#mob_topbar{
+    display: none;
+}
+
 #body_div{
     background-attachment: scroll;
 }
@@ -139,6 +143,10 @@ ul{
     padding: 50px
 }
 
+img{
+    width: 700px;
+}
+
 #backImg_left_1, #backImg_right_1{
     width: 300px;
     height: 300px;
@@ -210,35 +218,63 @@ ul{
         padding-right: 10px;
         padding-left: 10px;
     }
-    #navdiv{
-        display: flex;
+
+    #topbar{
+        display: none;
     }
+
     #logo_btn{
         display: none;
         position: relative;
     }
     
     #logo_m{
-        padding-top: 10px;
-        margin-right: 10px;
         display: flex;
         position: relative;
     }
 
     #logo_m>h1{
         display: flex;
+        width: 100%;
         align-items: center;
+        justify-content: center;
         font-size: 1.2em;
     }
 
     #logo_m>img{
-        position: relative;
-        top: 15px;
-        left: 169px;
+        position: absolute;
+        top: 15%;
+        left: 53%;
+    } 
+
+    #mob_topbar{
+        display: flex;
+    }
+
+    #mob_navDiv{
+        display: flex;
+        height: 50px;
+        width: 100%;
+        justify-content: center;
+        background-color: #deffe9;
+    }
+
+    #mob_navDiv input{
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
     
-    /*
-    모바일 상태에서 로고 위치 조정, 탑바내의 리스트를 클릭했을 때 다시 기본값으로 돌아가게
-    */
+    #mob_topbar_btn{
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: white;
+        border: 1px solid black;
+        font-weight: bold;
+    }
     
+    img{
+        width: 100%;
+    }
+
 }
+

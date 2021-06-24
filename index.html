@@ -16,9 +16,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>메이플스토리 시드</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="shortcut icon" href="img/알리샤반전-min.png" />
+    <link rel="stylesheet" href="main.css"> 
     <script src="main.js"></script>
+    <link rel="shortcut icon" href="img/알리샤반전-min.png" />
 </head>
 
 <body>
@@ -29,6 +29,12 @@
         </div>
         <img src="img/알리샤반전-min.png" alt="알리샤" id="backImg_left_1">
         <img src="img/알리샤노배굥-min.png" alt="알리샤" id="backImg_right_1">
+        <nav id="mob_topbar">
+            <div id="mob_navDiv">
+                <input type="text" placeholder="ex) 1층" id="mob_topbar_input"> 
+                <input type="button" value="검색" id="mob_topbar_btn" onclick="mobileSearch()">
+            </div>
+        </nav>
         <nav id="topbar">
             <div id="navDiv">
                 <div id="logo_btn" onclick="gotoInputF('main')">
