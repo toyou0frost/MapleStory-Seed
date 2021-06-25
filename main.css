@@ -8,7 +8,11 @@
     box-sizing: border-box;
 }
 
-body:not(#sidebar){
+body{
+    background-color: #f0fff5;
+}
+
+#body_div{
     text-align: center;
     width: 1250px;
     height: 100%;
@@ -206,15 +210,21 @@ img{
 }
 
 #sidebar{
-    display: none;
-    /* display: flex; */
-    position: absolute;
+    /* display: none; */
+    display: flex;
+    position: fixed;
+    text-align: center;
+    margin: 0 auto;
+    top: 40%;
+    left: 90%;
+    font-family: 'Jua', sans-serif;
+    background-color: #f0fff5;
 }
 
 #sideDiv{
-    border: 1px solid #ccc;
+    border: 1px solid #aaa;
     background-color: #deffe9;
-    padding: 10px;
+    padding: 0px;
 }
 
 #sideinput{
@@ -242,7 +252,9 @@ img{
 
 #sideTop{
     display: flex;
-    margin-bottom: 5px;
+    margin-top: 3px;
+    margin-bottom: 7px;
+    padding: 7px;
 }
 
 #sideTop>input{
@@ -256,6 +268,10 @@ img{
 
 #sideBottom>input{
     cursor: pointer;
+}
+
+#sideBottom{
+    margin-top: 8px;
 }
 
 #topbtn{
@@ -282,6 +298,21 @@ img{
 #sidebotbool{
     display: flex;
     justify-content: center;
+    border-top: 1px solid #aaa;
+    margin-top: 10px;
+    background-color: #c5edd2;
+    padding: 3px;
+}
+
+#sidetitle>h1{
+    border-bottom: 1px solid #aaa;
+    padding-top: 5px;
+    background-color: #c5edd2;
+    font-size: 1.3em;
+}
+
+#sidetitle{
+    cursor: move;
 }
 
 @media(max-width: 480px){

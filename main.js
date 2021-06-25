@@ -418,6 +418,36 @@ const key = onload = () => {
 
 }
 
+const sidebarMove = onload = () =>{ // https://ko.javascript.info/mouse-drag-and-drop 블로그 참조
+    const sidebar = document.getElementById("sidebar");
+    const sidebartitle = document.getElementById("sidetitle")      
+    sidebartitle.onmousedown = function (event) {
+        let shiftX = event.pageX - sidebar.getBoundingClientRect().left;
+        let shiftY = event.pageY - sidebar.getBoundingClientRect().top;
+        sidebar.style.zIndex = 1000;
+        document.body.append(sidebar);
+        moveAt(event.pageX, event.pageY);
+
+        function moveAt(pageX, pageY) {
+            sidebar.style.left = pageX - shiftX + 'px';
+            sidebar.style.top = pageY - shiftY + 'px';
+        }
+        function onMouseMove(event) {
+            moveAt(event.pageX, event.pageY);
+        }
+
+        document.addEventListener('mousemove', onMouseMove);
+
+        sidebartitle.onmouseup = function () {
+            document.removeEventListener('mousemove', onMouseMove);
+            sidebar.onmouseup = null;
+        };
+    };
+    sidebar.ondragstart = function () {
+        return false;
+    };
+}
+
 function mobileSearch(){
     const inputData = document.getElementById("mob_topbar_input").value;
     mobileTopbar(inputData);
