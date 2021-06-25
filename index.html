@@ -18,10 +18,30 @@
     <title>메이플스토리 시드</title>
     <link rel="stylesheet" href="main.css"> 
     <script src="main.js"></script>
-    <!-- <link rel="shortcut icon" href="img/알리샤반전-min.png" /> -->
+    <link rel="shortcut icon" href="img/알리샤반전-min.png" />
 </head>
 
 <body>
+    <nav id="sidebar">
+        <div id="sideDiv">
+            <div id="sideTop">
+                <div id="sideinput">
+                    <input type="text" id="inputFloor" placeholder="1층">
+                    <p>/50층</p>
+                </div>
+                <input type="button" value="검색" id="searchbtn" onclick="sidebarsearch()">
+            </div>
+            <div id="sideBottom">    
+                <input type="image" id="botbtn" src="img/sidebtn.png" onclick="sideleftclick()">
+                <input type="image" id="topbtn" src="img/sidebtn.png" onclick="siderightclick()">
+                <br>
+                <div id="sidebotbool">
+                    <p style="display: inline;" id="sidebooltext">사이드바 제거</p>
+                    <input type="button" id="sidebool" value="X" onclick="destroySide()">
+                </div>
+            </div>
+        </div>
+    </nav>
     <div id="body_div">
         <div id="logo_m" onclick="gotoInputF('main')">  
             <img src="img/알리샤노배굥-min.png" alt="logo" id="logo">

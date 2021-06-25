@@ -8,7 +8,7 @@
     box-sizing: border-box;
 }
 
-body{
+body:not(#sidebar){
     text-align: center;
     width: 1250px;
     height: 100%;
@@ -205,12 +205,96 @@ img{
     display: none;
 }
 
+#sidebar{
+    display: none;
+    /* display: flex; */
+    position: absolute;
+}
+
+#sideDiv{
+    border: 1px solid #ccc;
+    background-color: #deffe9;
+    padding: 10px;
+}
+
+#sideinput{
+    display: flex;
+}
+
+#sideinput>p{
+    display: inline;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+#inputFloor{
+    display: inline;
+    text-align: right;
+    width: 40px;
+    height: 25px;
+    background-color: #deffe9;
+    border: 1px solid #ccc;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    font-weight: bold;
+}
+
+#sideTop{
+    display: flex;
+    margin-bottom: 5px;
+}
+
+#sideTop>input{
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 3px;
+    cursor: pointer;
+    margin-left: 3px;
+    font-weight: bold;
+}
+
+#sideBottom>input{
+    cursor: pointer;
+}
+
+#topbtn{
+    transform:rotate(180deg);
+    width: 30px;
+}
+
+#botbtn{
+    width: 30px;
+}
+
+#sidebool{    
+    background-color: white;
+    border: 1px solid #ccc;
+    margin-left: 10px;
+    margin-top: 5px;
+    width: 13px;
+    height: 13px;
+    font-size: 0.6em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#sidebotbool{
+    display: flex;
+    justify-content: center;
+}
+
 @media(max-width: 480px){
     body{
         font-size: 1.2em;
         width: auto;
         margin: 0px auto;
     }
+
+    #sidebar{
+        display: none;
+    }
+
     #backImg_right_1{
         display: none;
     }

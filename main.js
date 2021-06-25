@@ -332,6 +332,7 @@ const floor = [
 //}
 
 let tmp = "";
+let checkfloor = 0;
 
 function gotoInputF(input){
     // let url = "https://butdory.github.io/MapleStory-SEED/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/"+input;
@@ -340,11 +341,13 @@ function gotoInputF(input){
     for(let i = 1 ; i <= 50; i++){
         tmp = i + "f";
         if(tmp === input){
-                art1.innerHTML = floor[i];
-                key();
-                break;
-            }
+            checkfloor = i;
+            art1.innerHTML = floor[i];
+            key();
+            break;
+        }
         else if(input === "main"){
+            checkfloor = 0;
             art1.innerHTML = floor[0];
             break;
         }
@@ -427,5 +430,62 @@ function mobileTopbar(search) {
     for(let i = 0; i < inputData.length - 1; i++){
         inputInt += inputData[i];
     }
+    if(inputData === "로비"){
+        inputInt = 0;
+    }
+    if(floor[inputInt] === undefined){
+        alert("검색하신 층이 존재하지 않습니다.");
+        return;
+    }
     art1.innerHTML = floor[inputInt];
+}
+
+function destroySide(){
+    document.getElementById("sidebar").style.display = "none";
+}
+
+function sidebarsearch(){
+    const inputData = document.getElementById("inputFloor").value;
+    sidebar(inputData);
+}
+
+function sidebar(search) {
+    const inputData = search;
+    let inputInt = "";
+    const art1 = document.getElementById("section_1");
+    for(let i = 0; i < inputData.length - 1; i++){
+        inputInt += inputData[i];
+    }
+    if(inputData === "로비"){
+        inputInt = 0;
+    }
+    if(floor[inputInt] === undefined){
+        alert("검색하신 층이 존재하지 않습니다.");
+        return;
+    }
+    checkfloor = parseInt(inputInt);
+    art1.innerHTML = floor[inputInt];
+}
+
+function sideleftclick(){
+    const art1 = document.getElementById("section_1");
+    checkfloor -= 1;
+    if(floor[checkfloor] === undefined){
+        alert("더 이상 내려갈 수 없습니다.");
+        checkfloor += 1;
+        return;
+    }
+    art1.innerHTML = floor[checkfloor];
+}
+
+function siderightclick(){    
+    const art1 = document.getElementById("section_1");
+    checkfloor += 1;
+    if(floor[checkfloor] === undefined){
+        alert("더 이상 올라갈 수 없습니다.");
+        checkfloor -= 1;
+        return;
+    }
+    art1.innerHTML = floor[checkfloor];
+
 }
