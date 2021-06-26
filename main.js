@@ -457,8 +457,13 @@ function mobileTopbar(search) {
     const inputData = search;
     let inputInt = "";
     const art1 = document.getElementById("section_1");
-    for(let i = 0; i < inputData.length - 1; i++){
-        inputInt += inputData[i];
+    if(!(isNaN(inputData))){
+        inputInt = inputData;
+    }
+    else{   
+        for(let i = 0; i < inputData.length - 1; i++){
+            inputInt += inputData[i];
+        }
     }
     if(inputData === "로비"){
         inputInt = 0;
@@ -472,6 +477,11 @@ function mobileTopbar(search) {
 
 function destroySide(){
     document.getElementById("sidebar").style.display = "none";
+    check = document.getElementById("onoffbtn").checked = "false";
+}
+
+function createSide(){
+    document.getElementById("sidebar").style.display = "flex";
 }
 
 function sidebarsearch(){
@@ -483,8 +493,13 @@ function sidebar(search) {
     const inputData = search;
     let inputInt = "";
     const art1 = document.getElementById("section_1");
-    for(let i = 0; i < inputData.length - 1; i++){
-        inputInt += inputData[i];
+    if(!(isNaN(inputData))){
+        inputInt = inputData;
+    }
+    else{    
+        for(let i = 0; i < inputData.length - 1; i++){
+            inputInt += inputData[i];
+        }
     }
     if(inputData === "로비"){
         inputInt = 0;
@@ -495,6 +510,7 @@ function sidebar(search) {
     }
     checkfloor = parseInt(inputInt);
     art1.innerHTML = floor[inputInt];
+
 }
 
 function sideleftclick(){
@@ -506,6 +522,7 @@ function sideleftclick(){
         return;
     }
     art1.innerHTML = floor[checkfloor];
+    changeSideValue(checkfloor);
 }
 
 function siderightclick(){    
@@ -517,5 +534,19 @@ function siderightclick(){
         return;
     }
     art1.innerHTML = floor[checkfloor];
+    changeSideValue(checkfloor);
+}
 
+function changeSideValue(value){
+    document.getElementById("inputFloor").value = value+"층";
+}
+
+function sidebarOnOff(){
+    const check = document.getElementById("onoffbtn").checked;
+    if(check){
+        destroySide();
+    }
+    else{
+        createSide();
+    }
 }

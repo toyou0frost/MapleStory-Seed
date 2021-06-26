@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f0fff5;
+}
+
+#body_div{
+    text-align: center;
+    width: 1250px;
+    height: 100%;
+    margin: 0 auto;
+    font-family: 'Jua', sans-serif;
+    background-color: #f0fff5;
+    border-left: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+}
+
+#navDiv{
+    display: flex;
+    width: 100%;
+    padding: 30px;
+    
+    margin: 20px;
+    margin:  0px;
+    margin-bottom: 0px;
+    padding-bottom: 5px;
+    transition: background-color 0.5s;
+}
+
+#topbar{
+    background-color: #deffe9;
+    border-bottom: 2px solid #ccc;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+}
+
+#logo{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 23px;
+    left: 240px;
+}
+
+#navtitle{
+    width: 400px;
+    height: 75px;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+}
+
+img{
+    width: 700px;
+}
+
+#backImg_left_1, #backImg_right_1{
+    width: 300px;
+    height: 300px;
+    top: 300px;
+    z-index: 1;
+}

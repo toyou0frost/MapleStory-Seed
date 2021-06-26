@@ -315,7 +315,12 @@ img{
     cursor: move;
 }
 
-@media(max-width: 480px){
+#sideonoff{
+    text-align: right;
+    padding: 20px;
+}
+
+@media(max-width: 480px){  /*모바일 버전*/
     body{
         font-size: 1.2em;
         width: auto;
