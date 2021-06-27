@@ -69,3 +69,19 @@ img{
     top: 300px;
     z-index: 1;
 }
+
+#topbar_right{
+    font-size: 1.5em;
+    margin-left: 600px; /* 임시 */
+}
+
+#section_1 > article > h1{
+    padding: 50px
+}
+
+table{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    border: none;
+}
