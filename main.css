@@ -109,7 +109,8 @@ ul{
 
 .topbar_ul_list > ul > li{
     margin: 5px;
-    border: 1px solid black;
+    padding-top: 5px;
+    border-bottom: 1px solid #aaa;
 }
 
 .topbar_ul_list > ul > li:hover{
@@ -219,6 +220,7 @@ img{
     left: 90%;
     font-family: 'Jua', sans-serif;
     background-color: #f0fff5;
+    z-index: 1000;
 }
 
 #sideDiv{

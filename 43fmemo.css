@@ -83,5 +83,21 @@ table{
     padding: 30px;
     display: flex;
     justify-content: center;
+    user-select: none;
     border: none;
+}
+
+table > tbody > tr > td > *{
+    width: 100%;
+    padding: 5px;
+}
+
+table > tbody > tr > *{
+    background-color: #c5edd2;
+    padding: 10px;
+    border: 1px solid;
+}
+
+#article_1 > h1{
+    font-size: 2em;
 }
