@@ -38,8 +38,7 @@ body{
 #topbar{
     background-color: #deffe9;
     border-bottom: 2px solid #ccc;
-    position: -webkit-sticky;
-    position: sticky;
+    position: relative;
     top: 0px;
 }
 
@@ -100,4 +99,8 @@ table > tbody > tr > *{
 
 #article_1 > h1{
     font-size: 2em;
+}
+
+.radiobtn *{
+    cursor: pointer;
 }
