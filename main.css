@@ -227,6 +227,7 @@ img{
     font-family: 'Jua', sans-serif;
     background-color: #f0fff5;
     z-index: 1000;
+    width: 140px;
 }
 
 #sideDiv{
@@ -234,6 +235,7 @@ img{
     background-color: #deffe9;
     padding: 0px;
 }
+
 
 #sideinput{
     display: flex;
