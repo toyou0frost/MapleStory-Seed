@@ -265,9 +265,10 @@ img{
     margin-top: 3px;
     margin-bottom: 7px;
     padding: 7px;
+    align-items: center;
 }
 
-#sideTop>input{
+#sideTop>input:not(#searchbtn){
     background-color: white;
     border: 1px solid #ccc;
     padding: 3px;
@@ -328,6 +329,13 @@ img{
 #sideonoff{
     text-align: right;
     padding: 20px;
+}
+
+#searchbtn{
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 3px;
+    margin-left: 5px;
 }
 
 @media(max-width: 480px){  /*모바일 버전*/
