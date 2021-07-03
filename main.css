@@ -183,10 +183,14 @@ img{
 }
 
 #footerDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 100%;
-    background-color: #DDDDDD;
+    height: 70px;
     padding: 10px;
+    border-top: 1px solid #ccc;
+    background-color: #deffe9;
 }
 
 #data{
@@ -338,6 +342,10 @@ img{
     margin-left: 5px;
 }
 
+#_50fimg{
+    width: 20em !important;
+}
+
 @media(max-width: 480px){  /*모바일 버전*/
     body{
         font-size: 1.2em;
@@ -382,7 +390,7 @@ img{
     #logo_m>img{
         position: absolute;
         top: 15%;
-        left: 53%;
+        left: 50.5%;
     } 
 
     #mob_topbar{
