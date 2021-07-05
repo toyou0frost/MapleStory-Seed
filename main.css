@@ -348,9 +348,14 @@ img{
 
 @media(max-width: 480px){  /*모바일 버전*/
     body{
-        font-size: 1.2em;
+        font-size: 2em;
+        font-weight: bold;
         width: auto;
         margin: 0px auto;
+    }
+
+    #sideonoff{
+        display: none;
     }
 
     #sidebar{
@@ -399,15 +404,19 @@ img{
 
     #mob_navDiv{
         display: flex;
-        height: 50px;
+        height: 150px;
         width: 100%;
         justify-content: center;
         background-color: #deffe9;
     }
 
     #mob_navDiv input{
-        margin-top: 10px;
+        margin-top: 20px;
         margin-bottom: 10px;
+        margin-right: 20px;
+        width: 15em;
+        font-size: 1.2em;
+        height: 70%;
     }
     
     #mob_topbar_btn{
