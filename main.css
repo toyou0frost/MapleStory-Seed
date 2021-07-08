@@ -37,15 +37,16 @@ body{
 #body_div{
     background-attachment: scroll;
 }
-
+    
 ul{
     list-style-type: none;
 }
 
 .topbar_ul_list{
     max-height: 0px;
+    background-color: #d1ffe0; 
     overflow: hidden;
-    transition: max-height 0.5s;
+    transition: max-height 0.3s;
 }
 
 #memo{
@@ -56,24 +57,22 @@ ul{
 
 #topbar_ul li:nth-of-type(n):hover:not(#memo){
     background-color: #d1ffe0;
-    transition: background-color 0.5s;
+    transition: background-color 0.3s;
 }
 
 #topbar_ul li:nth-of-type(n):hover:not(#memo) .topbar_ul_list{
     max-height: 100%;
-    transition: max-height 0.5s;
+    transition: max-height 0.3s;
 }
 
 #navDiv{
     display: flex;
     width: 100%;
     padding: 30px;
-    
-    margin: 20px;
     margin:  0px;
     margin-bottom: 0px;
     padding-bottom: 5px;
-    transition: background-color 0.5s;
+    transition: background-color 0.3s;
 }
 
 #topbar{
