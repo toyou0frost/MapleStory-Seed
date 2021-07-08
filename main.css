@@ -1,5 +1,6 @@
 /* 
 가장 연함 : #f0fff5
+연함 중간 사이 : #d1ffe0
 중간 : #deffe9
 가장 진함 : #c5edd2
 */
@@ -88,6 +89,16 @@ ul{
     display: flex;
 }
 
+.topbar_ul_items{
+    background: linear-gradient(to left, #deffe9 50%, #c5edd2 50%) right;
+    background-size: 200%;
+    transition: 0.3s ease-out;
+}
+
+.topbar_ul_items:hover{
+    background-position: left;
+}
+
 #topbar_ul > li{
     flex: 1;
 }
@@ -139,6 +150,16 @@ ul{
 
 #logo_btn:hover{
     cursor: pointer;
+}
+
+.topbar_ul li{
+    background: linear-gradient(to left, #d1ffe0 50%, #c5edd2 50%) right !important;
+    background-size: 200% !important;
+    transition: 0.3s ease-out !important;
+}
+
+.topbar_ul li:hover{
+    background-position: left !important;
 }
 
 #topbar_hr{
