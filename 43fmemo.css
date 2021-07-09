@@ -104,10 +104,10 @@ table > tbody > tr > *{
 }
 
 #resetbtn{
+    height: 100%;
     padding: 10px;
     margin: 10px;
     margin-top: 30px;
-    height: 100%;
     background-color: white;
     border: 1px solid #ccc;
     cursor: pointer;
@@ -120,4 +120,14 @@ table > tbody > tr > *{
 #memo{
     display: flex;
     justify-content: center;
+}
+
+@media(max-width: 480px){ 
+    #memo{
+        display: none;
+    }
+
+    #article_1{
+        font-size: 3em;
+    }
 }
