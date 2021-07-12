@@ -79,9 +79,12 @@ img{
 }
 
 table{
+    margin: 300px;
     padding: 30px;
     border: none;
     padding-bottom: 0px;
+    border-spacing: 0;
+    border-collapse: collapse;
 }
 
 table > tbody > tr > td > *{
@@ -122,16 +125,6 @@ table > tbody > tr > *{
     justify-content: center;
 }
 
-@media(max-width: 480px){ 
-    #memo{
-        display: none;
-    }
-
-    #article_1{
-        font-size: 3em;
-    }
-}
-
 #footerDiv{
     display: flex;
     justify-content: center;
@@ -141,4 +134,14 @@ table > tbody > tr > *{
     padding: 10px;
     border-top: 1px solid #ccc;
     background-color: #deffe9;
+}
+
+@media(max-width: 480px){ 
+    #memo{
+        display: none;
+    }
+
+    #article_1{
+        font-size: 3em;
+    }
 }
