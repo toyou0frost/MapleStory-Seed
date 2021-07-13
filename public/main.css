@@ -366,6 +366,14 @@ img{
     width: 20em !important;
 }
 
+#footergithub{
+    color: black;
+}
+
+#footergithub:hover{
+    color: slategray;
+}
+
 @media(max-width: 480px){  /*모바일 버전*/
     body{
         font-size: 2em;
