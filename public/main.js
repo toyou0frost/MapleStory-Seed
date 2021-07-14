@@ -325,30 +325,25 @@ const floor = [
     '<article id="article_1"><h1>50층 - 보스: 도로시와 토토퇴치하기</h1><p><img id="_50fimg" src="gif/50f.jpg" alt="50f"> <br> <br><strong>보스 층. </strong><br>피통 8400억. <br>데카가 무려 30 이다. 솔스데미 스펙이라면 처음 왔어도 충분히 격파 가능하다. <br>만약 자신의 스펙이 부족하다면 공략을 따로 찾아보자. 이 글에선 설명 생략. <br></p></article>'
 ];
 
-// function gotomain(){
-//     //location.replace('https://butdory.github.io/MapleStory-SEED/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/main.html');
-//     //window.location.replace("https://butdory.github.io/MapleStory-SEED/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/main.html");
-//     window.location.href = "https://butdory.github.io/MapleStory-SEED/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/main.html";
-//}
-
 let tmp = "";
 let checkfloor = 0;
 
 function gotoInputF(input){
-    // let url = "https://butdory.github.io/MapleStory-SEED/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/"+input;
-    // window.location.replace(url)
     const art1 = document.getElementById("section_1");
+    const sidedata = document.getElementById("inputFloor");
     for(let i = 1 ; i <= 50; i++){
         tmp = i + "f";
         if(tmp === input){
             checkfloor = i;
             art1.innerHTML = floor[i];
+            sidedata.value = i+"층";
             key();
             break;
         }
         else if(input === "main"){
             checkfloor = 0;
             art1.innerHTML = floor[0];
+            sidedata.value = "로비";
             break;
         }
     }
@@ -538,6 +533,10 @@ function siderightclick(){
 }
 
 function changeSideValue(value){
+    if(value === 0){
+        document.getElementById("inputFloor").value = "로비";
+        return
+    }
     document.getElementById("inputFloor").value = value+"층";
 }
 
