@@ -202,7 +202,12 @@ img{
     width: 50%;
 }
 
-#footerDiv{
+footer{
+    background-color: #deffe9;
+    border-top: 1px solid #ccc;
+}
+
+#footerDiv, #footerDiv_mob{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -374,6 +379,10 @@ img{
     color: slategray;
 }
 
+#footerDiv_mob{
+    display: none;
+}
+
 @media(max-width: 480px){  /*모바일 버전*/
     body{
         font-size: 2em;
@@ -471,5 +480,12 @@ img{
         font-size: 1.5em;
     }
 
+    #footerDiv{
+        display: none;
+    }
+
+    #footerDiv_mob{
+        display: initial;
+    }
 }
 
