@@ -19,6 +19,10 @@ body{
     background-color: #f0fff5;
 }
 
+a{
+    text-decoration: none;
+}
+
 #body_div{
     text-align: center;
     width: 1250px;
@@ -384,6 +388,9 @@ footer{
     display: none;
 }
 
+.githublogo{
+    width: 15px;
+}
 @media(max-width: 480px){  /*모바일 버전*/
     body{
         font-size: 2em;
