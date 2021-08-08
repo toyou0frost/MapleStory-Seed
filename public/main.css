@@ -123,6 +123,10 @@ ul{
     background-color: #deffe9;
 }
 
+#onofftext, #onoffbtn{
+    cursor: pointer;
+}
+
 #topbar_ul > li > div:nth-of-type(2n-1){
     padding-bottom: 10px;
     padding-top: 10px;
