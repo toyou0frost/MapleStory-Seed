@@ -45,7 +45,7 @@ a{
 ul{
     list-style-type: none;
 }
-
+/*topbar css start*/
 .topbar_ul_list{
     max-height: 0px;
     background-color: #d1ffe0; 
@@ -123,10 +123,6 @@ ul{
     background-color: #deffe9;
 }
 
-#onofftext, #onoffbtn{
-    cursor: pointer;
-}
-
 #topbar_ul > li > div:nth-of-type(2n-1){
     padding-bottom: 10px;
     padding-top: 10px;
@@ -170,14 +166,7 @@ ul{
     background-position: left !important;
 }
 
-#topbar_hr{
-    border: 0;
-    height: 3px;
-    background: #ccc;
-    width: 10000px;
-    position: absolute;
-    right: 0px;
-}
+/*topbar css end*/
 
 #section_1 > article > h1{
     padding: 50px
@@ -202,7 +191,7 @@ img{
 #article_3>ul>li>p, 
 #article_4>p, 
 #article_5>ul>li>p,
-#article_6>p{
+#article_6>p:not(.color_red){
     font-size: 0.85em;
     line-height: 25px;
 }
@@ -231,6 +220,7 @@ footer{
     height: 43px;
     margin-right: 10px;
 }
+
 #inputbtn {            
     border: 0;
     text-align: center;
@@ -241,6 +231,7 @@ footer{
     border-radius: 4px;
     background: rgba(102, 152, 203, 1);
 }
+
 #inputbtn:active {
     background: #608FBF;
 }
@@ -392,9 +383,19 @@ footer{
     display: none;
 }
 
+#onofftext, #onoffbtn{
+    cursor: pointer;
+}
+
 .githublogo{
     width: 15px;
 }
+
+.color_red{
+    display: inline;
+    color: red;
+}
+
 @media(max-width: 480px){  /*모바일 버전*/
     body{
         font-size: 2em;
