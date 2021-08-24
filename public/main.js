@@ -311,7 +311,7 @@ const floor = [
     '<article id="article_1"><h1>36층 - 암호에 따라 순서대로 몬스터를 일반 공격하기</h1><p><strong>기타 층. <br></strong>시크레타가 불러주는 순서대로 몬스터를 일반공격하자. <br>몇몇 스킬은 몬스터에 공격판정이 있으니 <strong>공격형 이동기는 사용하지 말자.</strong> <br><strong>최대 8자리 암호</strong>까지 부른다. 외우면 헷갈리니 <strong>채팅창에 써두면서 하자.</strong> <br> <br><img src="gif/36f.gif" alt="36f"></p></article>',
     '<article id="article_1"><h1>37층 - 미요캐츠, 키요, 모래 두더지, 스콜피언 각각 100마리 퇴치하기</h1><p><strong>사냥 층.</strong> <br>총 3층구성이다. 2,3층에 있는 <strong>키요와 스콜피언이 젠율이 낮으니 신경써서 처리</strong>하자. <br>1층몹을 계속 안잡으면 키요와 스콜피언 젠이 안되므로 1층도 미리미리 제거해두자. <br> <br><img src="gif/37f.gif" alt="37f"></p></article>',
     '<article id="article_1"><h1>38층 - 주어진 몬스터를 사냥하여 어두운 기운을 제거하기</h1><p><strong>사냥 층.</strong> <br>NPC에게 돕겠다고 말을 걸고 시작하면 된다. <br>NPC가 불러주는 몬스터를 잡으면 끝. <br> <br><img src="gif/38f.gif" alt="38f"></p></article>',
-    '<article id="article_1"><h1>★39층 - 퀴즈광이 내는 퀴즈 모두 맞추기</h1><p><strong>기타 층.</strong> <br>NPC가 내는 문제를 10번 맞춰야한다. <br>2회 이상 틀릴 경우 처음부터 문제를 맞춰야한다. 기회는 무제한. <br> <br></p><div id="search"><input type="text" id="data" autofocus><input type="button" value="검색" onclick="answer()" id="inputbtn"> </div><br> <br><p id="outputData"></p></article><article><h1>검색창 사용법</h1><img src="gif/39f.jpg" alt="39f"><p>이런 문제가 나왔다면 <br>2개의 보기를 띄어쓰기 없이 연속해서 입력! <br> <br><img src="gif/39f_1.PNG" alt="39f" style="border: 1px solid black;"> <br> <br>정상적으로 입력했다면 <br> 이런 식으로 해당 문제와 그에 대한 답이 문제 오른쪽에 출력! <br>*주의사항 : 검색창에 1글자 이하로 검색하거나 띄어쓰기를 할 시 정삭적으로 검색되지 않음</p></article>',
+    '<article id="article_1"><h1>★39층 - 퀴즈광이 내는 퀴즈 모두 맞추기</h1><p><strong>기타 층.</strong> <br>NPC가 내는 문제를 10번 맞춰야한다. <br>2회 이상 틀릴 경우 처음부터 문제를 맞춰야한다. 기회는 무제한. <br> <br></p><div id="search"><input type="text" id="data" autofocus><input type="button" value="검색" onclick="ReturnRightAnswer()" id="inputbtn"> </div><br> <br><p id="outputData"></p></article><article><h1>검색창 사용법</h1><img src="gif/39f.jpg" alt="39f"><p>이런 문제가 나왔다면 <br>2개의 보기를 띄어쓰기 없이 연속해서 입력! <br> <br><img src="gif/39f_1.PNG" alt="39f" style="border: 1px solid black;"> <br> <br>정상적으로 입력했다면 <br> 이런 식으로 해당 문제와 그에 대한 답이 문제 오른쪽에 출력! <br>*주의사항 : 검색창에 1글자 이하로 검색하거나 띄어쓰기를 할 시 정삭적으로 검색되지 않음</p></article>',
     '<article id="article_1"><h1>★40층 - 보스: 허수아비 퇴치하기</h1><p><strong>보스 층. <br>바인드(에르다노바) 지참하면 좋음! <br> <br></strong>허수아비가 등장. 체력은 15억. <br>여태껏 보스와 다르게 허수아비는 <strong>딜로 잡는것이 불가능</strong>하다. 모든데미지에 10밖에 달지않는다. <br>허수아비는 맵 중앙에 있는 불길에 닿으면 데미지를 입는다. <br>첫 데미지는 150만이지만, 불길 위에 오래 있을수록 점점 증가하여 2000만까지 오른다. <br><strong>패턴을 잘 회피하면서 허수아비를 유인하거나, 밀격기를 이용해 불에 닿게하여 <br>20스택(틱당 2000만 데미지)까지 쌓은채로 버티면 클리어.</strong> <br> <br><img src="gif/40f.gif" alt="40f"></p></article>',
     '<article id="article_1"><h1>41층 - 장애물을 피해 다음 층의 입구까지 돌파하기</h1><p><strong>점프 층.</strong> <br>41층까지 온 실력자라면 딱히 어렵지 않을 것이다. <br>처음 점프구간을 힘들어 하는 사람들이 있는데, 발판마다 빠르게 두걸음 정도 걷고나서 점프해야한다. <br>움짤참고. <br> <br><img src="gif/41f.gif" alt="41f"> <br> <br><strong>★41층까지 클리어하면 2급작 완료!★</strong></p></article>',
     '<article id="article_1"><h1>★42층 - 몬스터를 각각 30마리씩 퇴치하면서 장애물을 피해 다음 층의 입구까지 돌파하기</h1><p><strong>점프 층.</strong> <br><strong>스파이더 인 미러(235레벨) 지참. (스인미가 없어도 상관은 없으나, 두번 돌아야해서 시간이 매우 빠듯함.)</strong> <br>만일을 대비해 미하일링크(스탠스 100%), 헤븐즈 도어(판테온)도 사용하면 좋다. <br> <br>외울게 많고, 몹 젠량과 위치 때문에 매우 어려운 층이니 <strong>동영상을 보는 것을 추천</strong>한다. <br>(직업빨이 있으니 자기직업 영상을 보자.) <br> <br>비틀, 듀얼비틀, 하프, 블러드하프 4종류를 각 30마리씩 처치하고 포탈까지 가야한다. <br><strong>시간제한이 존재</strong>한다.(핀리 소환시간 7분) <br><strong>운석</strong>도 떨어진다. 운이 안좋으면 발판 타이밍과 맞물려 떨어지고, 겁나 아프다. 주의 필요. <br> <br>42층은 크게<p style="color: orange; display: inline;">세 가지 구역</p>으로 나뉜다. <br><p style="color: orange; display: inline;">1구역</p>에 비틀과 듀얼비틀이 있다. <br>1에서 2구역으로 넘어갈때 <p style="color: orange; display: inline;">스인미</p><strong>를 써줘야하는</strong><p style="color: orange; display: inline;">발판</p>이 있다. <br><p style="color: orange; display: inline;">2구역</p>에 하프와 블러드하프가 있다. <br><p style="color: orange; display: inline;">3구역</p>에 투명발판이 있다. <br> <br><img src="gif/42_1f.png" alt="42f"> <br> <br><p style="color: orange; display: inline;">1구역 : </p>1층 비틀과 2,3층 듀얼비틀 30마리까지 잡아주자. <br><strong>1구역의 깜빡이 발판은 생성 주기가 서로 엇박자인 경우가 있으니 타이밍을 잘 숙지해두자. </strong><br> <br><strong>스인미 발판</strong>에서 스인미를 사용해주자. <br>여기서 스인미를 사용 안하면 나중에 블러드하프가 젠이 안되기 때문에 두 바퀴를 돌아야한다. <br>(만약 카데나의 팽이처럼 2구역에서 1층 비틀을 잡을 수 있는 스킬이 있다면, 스인미가 없어도 한 바퀴만에 클리어 가능하다.) <br> <br><p style="color: orange; display: inline;">2구역 : </p> 밟아지는 발판과, 그렇지 않은 발판이 있다. <br>아래 그림의 O가 밟아지는 발판, X가 함정발판이다. <br><strong>(가장 빠르게 포탈까지 가는 동선 지도)</strong> <br> <br><img src="gif/42_2f.png" alt="42f"> <br> <br>2구역은 4개의 구역으로 나눠서 기억하면 수월하다. 윗그림 참고. <br>가장 빠르게 포탈까지 가는 동선은 위와 같지만, 하프를 잡으려면 다른 발판도 밟으면서 플레이해야 한다. <br> <br><p style="color: orange; display: inline;">3구역</p>에는 투명 발판이 있다. <br>아래 움짤처럼 점프해주자. <br> <br><img src="gif/42_3f.gif" alt="42f"> <br><img src="gif/42_4f.png" alt="42f"> <br> <br>2점프와 3점프 사이에서 절대 점프하지 말자. <br>저 구간에서 점프하면 맵 첫부분까지 날라간다. <br></p></article>',
@@ -326,51 +326,51 @@ const floor = [
 ];
 
 let tmp = "";
-let checkfloor = 0;
+let currentfloor = 0;
 
-function gotoInputF(input){
-    const art1 = document.getElementById("section_1");
+function gotoInputFloor(input){
+    const sec_1 = document.getElementById("section_1");
     const sidedata = document.getElementById("inputFloor");
     for(let i = 1 ; i <= 50; i++){
         tmp = i + "f";
         if(tmp === input){
-            checkfloor = i;
-            art1.innerHTML = floor[i];
+            currentfloor = i;
+            sec_1.innerHTML = floor[i];
             sidedata.value = i+"층";
-            key();
+            pressEnter();
             break;
         }
         else if(input === "main"){
-            checkfloor = 0;
-            art1.innerHTML = floor[0];
+            currentfloor = 0;
+            sec_1.innerHTML = floor[0];
             sidedata.value = "로비";
             break;
         }
     }
 }
 
-function answer(){
+function ReturnRightAnswer(){
     document.getElementById("outputData").innerHTML = "";
-    let inputstr = document.getElementById("data").value;
-    if(inputstr.length <= 1){
+    const inputanswer = document.getElementById("data").value;
+    if(inputanswer.length <= 1){
         document.getElementById("outputData").innerHTML = "2글자 이상 입력해주세요";
         return;
     }
     let str = "";
-    let strtmp = "";
-    let answer = ""
-    let count = 0
-    let output = []
+    let tmpstring = "";
+    let answer = "";
+    let count = 0;
+    let output = [];
     for(let i = 0; i < question.length; i++){
         str = question[i];
-        strtmp = str;
+        tmpstring = str;
         for(let j = 0; j < str.length; j++){
             str = str.replace(/(\s*)/g, "");
             if(str[j] === " "){
                 continue;
             }
-            else if(str.slice(j, inputstr.length + j) === inputstr){
-                output[count] = strtmp;
+            else if(str.slice(j, inputanswer.length + j) === inputanswer){
+                output[count] = tmpstring;
                 count++;
             }
         }
@@ -396,7 +396,7 @@ function answer(){
     }
 }
 
-const key = onload = () => {
+const pressEnter = onload = () => {
     input = document.getElementById("data");
     if(input === null){
         return;
@@ -443,96 +443,95 @@ const sidebarMove = onload = () =>{ // https://ko.javascript.info/mouse-drag-and
     };
 }
 
-function mobileSearch(){
+function getMobileTopbarInput(){
     const inputData = document.getElementById("mob_topbar_input").value;
-    mobileTopbar(inputData);
+    mobileTopbarReturnResult(inputData);
 }
 
-function mobileTopbar(search) {
+function mobileTopbarReturnResult(search) {
     const inputData = search;
-    let inputInt = "";
-    const art1 = document.getElementById("section_1");
+    let convertint = "";
+    const sec_1 = document.getElementById("section_1");
     if(!(isNaN(inputData))){
-        inputInt = inputData;
+        convertint = inputData;
     }
     else{   
         for(let i = 0; i < inputData.length - 1; i++){
-            inputInt += inputData[i];
+            convertint += inputData[i];
         }
     }
     if(inputData === "로비"){
-        inputInt = 0;
+        convertint = 0;
     }
-    if(floor[inputInt] === undefined){
+    if(floor[convertint] === undefined){
         alert("검색하신 층이 존재하지 않습니다.");
         return;
     }
-    art1.innerHTML = floor[inputInt];
+    sec_1.innerHTML = floor[convertint];
 }
 
-function destroySide(){
+function destroySidebar(){
     document.getElementById("sidebar").style.display = "none";
     check = document.getElementById("onoffbtn").checked = "false";
 }
 
-function createSide(){
+function createSidebar(){
     document.getElementById("sidebar").style.display = "flex";
 }
 
-function sidebarsearch(){
+function getSidebarInput(){
     const inputData = document.getElementById("inputFloor").value;
-    sidebar(inputData);
+    sidebarReturnResult(inputData);
 }
 
-function sidebar(search) {
+function sidebarReturnResult(search) {
     const inputData = search;
-    let inputInt = "";
-    const art1 = document.getElementById("section_1");
+    let convertint = "";
+    const sec_1 = document.getElementById("section_1");
     if(!(isNaN(inputData))){
-        inputInt = inputData;
+        convertint = inputData;
     }
     else{    
         for(let i = 0; i < inputData.length - 1; i++){
-            inputInt += inputData[i];
+            convertint += inputData[i];
         }
     }
     if(inputData === "로비"){
-        inputInt = 0;
+        convertint = 0;
     }
-    if(floor[inputInt] === undefined){
+    if(floor[convertint] === undefined){
         alert("검색하신 층이 존재하지 않습니다.");
         return;
     }
-    checkfloor = parseInt(inputInt);
-    art1.innerHTML = floor[inputInt];
-
+    currentfloor = parseInt(convertint);
+    sec_1.innerHTML = floor[convertint];
 }
 
-function sideleftclick(){
-    const art1 = document.getElementById("section_1");
-    checkfloor -= 1;
-    if(floor[checkfloor] === undefined){
+function sidebarLeftButtonClick(){
+    const sec_1 = document.getElementById("section_1");
+    currentfloor -= 1;
+    if(floor[currentfloor] === undefined){
         alert("더 이상 내려갈 수 없습니다.");
-        checkfloor += 1;
+        currentfloor += 1;
         return;
     }
-    art1.innerHTML = floor[checkfloor];
-    changeSideValue(checkfloor);
+    sec_1.innerHTML = floor[currentfloor];
+    changeSidebarValue(currentfloor);
 }
 
-function siderightclick(){    
-    const art1 = document.getElementById("section_1");
-    checkfloor += 1;
-    if(floor[checkfloor] === undefined){
+function sidebarRightButtonClick(){    
+    const sec_1 = document.getElementById("section_1");
+    currentfloor += 1;
+    if(floor[currentfloor] === undefined){
         alert("더 이상 올라갈 수 없습니다.");
-        checkfloor -= 1;
+        currentfloor -= 1;
         return;
     }
-    art1.innerHTML = floor[checkfloor];
-    changeSideValue(checkfloor);
+    sec_1.innerHTML = floor[currentfloor];
+    changeSidebarValue(currentfloor);
 }
 
-function changeSideValue(value){
+function changeSidebarValue(value){
     if(value === 0){
         document.getElementById("inputFloor").value = "로비";
         return
@@ -543,9 +542,9 @@ function changeSideValue(value){
 function sidebarOnOff(){
     const check = document.getElementById("onoffbtn").checked;
     if(check){
-        destroySide();
+        destroySidebar();
     }
     else{
-        createSide();
+        createSidebar();
     }
 }

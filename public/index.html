@@ -35,11 +35,11 @@
                     <input type="text" id="inputFloor" placeholder="로비">
                     <p>/50층</p>
                 </div>
-                <input type="button" value="검색" id="searchbtn" onclick="sidebarsearch()">
+                <input type="button" value="검색" id="searchbtn" onclick="getSidebarInput()">
             </div>
             <div id="sideBottom">
-                <input type="image" id="botbtn" src="img/sidebtn.png" onclick="sideleftclick()">
-                <input type="image" id="topbtn" src="img/sidebtn.png" onclick="siderightclick()">
+                <input type="image" id="botbtn" src="img/sidebtn.png" onclick="sidebarLeftButtonClick()">
+                <input type="image" id="topbtn" src="img/sidebtn.png" onclick="sidebarRightButtonClick()">
                 <br>
                 <div id="sidebotbool">
                     <p style="display: inline;" id="sidebooltext">사이드바 제거</p>
@@ -49,7 +49,7 @@
         </div>
     </nav>
     <div id="body_div">
-        <div id="logo_m" onclick="gotoInputF('main')">
+        <div id="logo_m" onclick="gotoInputFloor('main')">
             <h1 id="navtitle">MapleStorySeed</h1>
         </div>
         <div style="user-select: none;">
@@ -59,12 +59,12 @@
         <nav id="mob_topbar">
             <div id="mob_navDiv">
                 <input type="text" placeholder="ex) 1층" id="mob_topbar_input">
-                <input type="button" value="검색" id="mob_topbar_btn" onclick="mobileSearch()">
+                <input type="button" value="검색" id="mob_topbar_btn" onclick="getMobileTopbarInput()">
             </div>
         </nav>
         <nav id="topbar" style="user-select: none;">
             <div id="navDiv">
-                <div id="logo_btn" onclick="gotoInputF('main')">
+                <div id="logo_btn" onclick="gotoInputFloor('main')">
                     <img src="img/알리샤노배굥-min.png" alt="logo" id="logo">
                     <h1 id="navtitle">MapleStory&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seed</h1>
                 </div>
@@ -79,16 +79,16 @@
                         <div class="topbar_ul_items">1층 ~ 10층</div>
                         <div class="topbar_ul_list">
                             <ul class="topbar_ul">
-                                <li onclick="gotoInputF('1f')">1층</li>
-                                <li onclick="gotoInputF('2f')">2층</li>
-                                <li onclick="gotoInputF('3f')">3층</li>
-                                <li onclick="gotoInputF('4f')">4층</li>
-                                <li onclick="gotoInputF('5f')">5층</li>
-                                <li onclick="gotoInputF('6f')">6층</li>
-                                <li onclick="gotoInputF('7f')">7층</li>
-                                <li onclick="gotoInputF('8f')">8층</li>
-                                <li onclick="gotoInputF('9f')">9층</li>
-                                <li onclick="gotoInputF('10f')">10층</li>
+                                <li onclick="gotoInputFloor('1f')">1층</li>
+                                <li onclick="gotoInputFloor('2f')">2층</li>
+                                <li onclick="gotoInputFloor('3f')">3층</li>
+                                <li onclick="gotoInputFloor('4f')">4층</li>
+                                <li onclick="gotoInputFloor('5f')">5층</li>
+                                <li onclick="gotoInputFloor('6f')">6층</li>
+                                <li onclick="gotoInputFloor('7f')">7층</li>
+                                <li onclick="gotoInputFloor('8f')">8층</li>
+                                <li onclick="gotoInputFloor('9f')">9층</li>
+                                <li onclick="gotoInputFloor('10f')">10층</li>
                             </ul>
                         </div>
                     </li>
@@ -96,16 +96,16 @@
                         <div class="topbar_ul_items">11층 ~ 20층</div>
                         <div class="topbar_ul_list">
                             <ul class="topbar_ul">
-                                <li onclick="gotoInputF('11f')">11층</li>
-                                <li onclick="gotoInputF('12f')">12층</li>
-                                <li onclick="gotoInputF('13f')">13층</li>
-                                <li onclick="gotoInputF('14f')">14층</li>
-                                <li onclick="gotoInputF('15f')">15층</li>
-                                <li onclick="gotoInputF('16f')">16층</li>
-                                <li onclick="gotoInputF('17f')">17층</li>
-                                <li onclick="gotoInputF('18f')">18층</li>
-                                <li onclick="gotoInputF('19f')">19층</li>
-                                <li onclick="gotoInputF('20f')">20층</li>
+                                <li onclick="gotoInputFloor('11f')">11층</li>
+                                <li onclick="gotoInputFloor('12f')">12층</li>
+                                <li onclick="gotoInputFloor('13f')">13층</li>
+                                <li onclick="gotoInputFloor('14f')">14층</li>
+                                <li onclick="gotoInputFloor('15f')">15층</li>
+                                <li onclick="gotoInputFloor('16f')">16층</li>
+                                <li onclick="gotoInputFloor('17f')">17층</li>
+                                <li onclick="gotoInputFloor('18f')">18층</li>
+                                <li onclick="gotoInputFloor('19f')">19층</li>
+                                <li onclick="gotoInputFloor('20f')">20층</li>
                             </ul>
                         </div>
                     </li>
@@ -113,16 +113,16 @@
                         <div class="topbar_ul_items">21층 ~ 30층</div>
                         <div class="topbar_ul_list">
                             <ul class="topbar_ul">
-                                <li onclick="gotoInputF('21f')">21층</li>
-                                <li onclick="gotoInputF('22f')">22층</li>
-                                <li onclick="gotoInputF('23f')">23층</li>
-                                <li onclick="gotoInputF('24f')">24층</li>
-                                <li onclick="gotoInputF('25f')">25층</li>
-                                <li onclick="gotoInputF('26f')">26층</li>
-                                <li onclick="gotoInputF('27f')">27층</li>
-                                <li onclick="gotoInputF('28f')">28층</li>
-                                <li onclick="gotoInputF('29f')">29층</li>
-                                <li onclick="gotoInputF('30f')">30층</li>
+                                <li onclick="gotoInputFloor('21f')">21층</li>
+                                <li onclick="gotoInputFloor('22f')">22층</li>
+                                <li onclick="gotoInputFloor('23f')">23층</li>
+                                <li onclick="gotoInputFloor('24f')">24층</li>
+                                <li onclick="gotoInputFloor('25f')">25층</li>
+                                <li onclick="gotoInputFloor('26f')">26층</li>
+                                <li onclick="gotoInputFloor('27f')">27층</li>
+                                <li onclick="gotoInputFloor('28f')">28층</li>
+                                <li onclick="gotoInputFloor('29f')">29층</li>
+                                <li onclick="gotoInputFloor('30f')">30층</li>
                             </ul>
                         </div>
                     </li>
@@ -130,16 +130,16 @@
                         <div class="topbar_ul_items">31층 ~ 40층</div>
                         <div class="topbar_ul_list">
                             <ul class="topbar_ul">
-                                <li onclick="gotoInputF('31f')">31층</li>
-                                <li onclick="gotoInputF('32f')">32층</li>
-                                <li onclick="gotoInputF('33f')">33층</li>
-                                <li onclick="gotoInputF('34f')">34층</li>
-                                <li onclick="gotoInputF('35f')">35층</li>
-                                <li onclick="gotoInputF('36f')">36층</li>
-                                <li onclick="gotoInputF('37f')">37층</li>
-                                <li onclick="gotoInputF('38f')">38층</li>
-                                <li onclick="gotoInputF('39f')">39층</li>
-                                <li onclick="gotoInputF('40f')">40층</li>
+                                <li onclick="gotoInputFloor('31f')">31층</li>
+                                <li onclick="gotoInputFloor('32f')">32층</li>
+                                <li onclick="gotoInputFloor('33f')">33층</li>
+                                <li onclick="gotoInputFloor('34f')">34층</li>
+                                <li onclick="gotoInputFloor('35f')">35층</li>
+                                <li onclick="gotoInputFloor('36f')">36층</li>
+                                <li onclick="gotoInputFloor('37f')">37층</li>
+                                <li onclick="gotoInputFloor('38f')">38층</li>
+                                <li onclick="gotoInputFloor('39f')">39층</li>
+                                <li onclick="gotoInputFloor('40f')">40층</li>
                             </ul>
                         </div>
                     </li>
@@ -147,16 +147,16 @@
                         <div class="topbar_ul_items">41층 ~ 50층</div>
                         <div class="topbar_ul_list">
                             <ul class="topbar_ul">
-                                <li onclick="gotoInputF('41f')">41층</li>
-                                <li onclick="gotoInputF('42f')">42층</li>
-                                <li onclick="gotoInputF('43f')">43층</li>
-                                <li onclick="gotoInputF('44f')">44층</li>
-                                <li onclick="gotoInputF('45f')">45층</li>
-                                <li onclick="gotoInputF('46f')">46층</li>
-                                <li onclick="gotoInputF('47f')">47층</li>
-                                <li onclick="gotoInputF('48f')">48층</li>
-                                <li onclick="gotoInputF('49f')">49층</li>
-                                <li onclick="gotoInputF('50f')">50층</li>
+                                <li onclick="gotoInputFloor('41f')">41층</li>
+                                <li onclick="gotoInputFloor('42f')">42층</li>
+                                <li onclick="gotoInputFloor('43f')">43층</li>
+                                <li onclick="gotoInputFloor('44f')">44층</li>
+                                <li onclick="gotoInputFloor('45f')">45층</li>
+                                <li onclick="gotoInputFloor('46f')">46층</li>
+                                <li onclick="gotoInputFloor('47f')">47층</li>
+                                <li onclick="gotoInputFloor('48f')">48층</li>
+                                <li onclick="gotoInputFloor('49f')">49층</li>
+                                <li onclick="gotoInputFloor('50f')">50층</li>
                             </ul>
                         </div>
                     </li>
