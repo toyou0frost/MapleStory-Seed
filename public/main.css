@@ -168,7 +168,7 @@ ul{
 
 /*topbar css end*/
 
-#section_1 > article > h1{
+#section_1 > div > article > h1{
     padding: 50px
 }
 
@@ -216,6 +216,8 @@ footer{
     background-color: #deffe9;
 }
 
+/*39floor css*/
+
 #data{
     height: 43px;
     margin-right: 10px;
@@ -231,6 +233,8 @@ footer{
     border-radius: 4px;
     background: rgba(102, 152, 203, 1);
 }
+
+/*39floor css*/
 
 #inputbtn:active {
     background: #608FBF;
@@ -396,6 +400,10 @@ footer{
     color: red;
 }
 
+.mobplatform{
+    display: none;
+}
+
 @media(max-width: 480px){  /*모바일 버전*/
     body{
         font-size: 2em;
@@ -467,14 +475,18 @@ footer{
         width: 15em;
         font-size: 1.2em;
         height: 70%;
+        border-radius: 10px;
     }
     
     #mob_topbar_btn{
         padding-left: 10px;
         padding-right: 10px;
-        background-color: white;
-        border: 1px solid black;
+        color: white;
+        background: rgba(102, 152, 203, 1);
+        border: 1px solid rgba(0, 0, 0, 0.21);
+        border-bottom: 4px solid rgba(0, 0, 0, 0.21);
         font-weight: bold;
+        border-radius: 10px;
     }
     
     img{
@@ -500,5 +512,40 @@ footer{
     #footerDiv_mob{
         display: initial;
     }
+
+    #data{
+        height: 150px;
+        margin-right: 10px;
+        border-radius: 10px;
+    }
+
+    #inputbtn { /* 39floor btn css */
+        border: 0;
+        height: 150px;
+        text-align: center;
+        color: white;
+        padding: 10px 30px;
+        border: 1px solid rgba(0, 0, 0, 0.21);
+        border-bottom: 4px solid rgba(0, 0, 0, 0.21);
+        background: rgba(102, 152, 203, 1);
+        border-radius: 10px;
+    }
+
+    .PCplatform{
+        display: none;
+    }
+
+    .mobplatform{
+        display: initial;
+    }
+
+    #section_1{
+        font-size: 1.5em;
+    }
+
+    img[alt = "mob39f"]{
+        border: 1px solid #aaa;
+    }
+
 }
 
