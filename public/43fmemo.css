@@ -12,6 +12,10 @@ body{
     background-color: #f0fff5;
 }
 
+a{
+    text-decoration: none;
+}
+
 #body_div{
     text-align: center;
     width: 1250px;
@@ -106,18 +110,46 @@ table > tbody > tr > *{
     cursor: pointer;
 }
 
-#resetbtn{
-    height: 100%;
-    padding: 10px;
-    margin: 10px;
-    margin-top: 30px;
-    background-color: white;
-    border: 1px solid #ccc;
+#_1fbtn{
     cursor: pointer;
+    height: 100%;
+    padding: 8px 20px;
+    color: white;
+    background: rgba(102, 152, 203, 1);
+    border: 1px solid rgba(0, 0, 0, 0.21);
+    border-bottom: 4px solid rgba(0, 0, 0, 0.21);
+    font-weight: bold;
+    border-radius: 10px;
 }
 
-#resetbtn:hover{
-    background-color: whitesmoke;
+.githublogo{
+    width: 15px;
+}
+
+#footergithub{
+    color: black;
+}
+
+#footergithub:hover{
+    color: slategray;
+}
+
+#resetbtn{    
+    position: sticky;
+    top: 20px;
+    cursor: pointer;
+    height: 100%;
+    margin: 10px;
+    margin-top: 30px;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    background: rgba(102, 152, 203, 1);
+    border: 1px solid rgba(0, 0, 0, 0.21);
+    border-bottom: 4px solid rgba(0, 0, 0, 0.21);
+    font-weight: bold;
+    border-radius: 10px;
 }
 
 #memo{
@@ -142,6 +174,11 @@ table > tbody > tr > *{
 
 #footergithub:hover{
     color: slategray;
+}
+
+    
+#mob_topbar_btn{
+
 }
 
 @media(max-width: 480px){ 
