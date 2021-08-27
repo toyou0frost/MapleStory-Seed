@@ -550,5 +550,13 @@ footer{
     #footerDiv_mob > a > img{
         width: 25px;
     }
-}
+
+    html{
+        width: 1250px;
+    }
+
+    #body_div{
+        width: 100%;
+    }
+}   
 
