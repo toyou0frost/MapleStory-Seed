@@ -547,5 +547,8 @@ footer{
         border: 1px solid #aaa;
     }
 
+    #footerDiv_mob > a > img{
+        width: 25px;
+    }
 }
 
