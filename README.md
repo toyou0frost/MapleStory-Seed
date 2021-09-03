@@ -1,1 +1,1 @@
-URL : https://maplestory-seed.com/
+URL : https://maplestory-seed.web.app/
