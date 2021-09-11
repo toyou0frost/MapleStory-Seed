@@ -410,7 +410,6 @@ const pressEnter = onload = () => {
         }
     });
     }
-
 }
 
 const sidebarMove = onload = () =>{ // https://ko.javascript.info/mouse-drag-and-drop 블로그 참조
